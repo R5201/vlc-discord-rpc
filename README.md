@@ -8,13 +8,14 @@ Join us on [Discord](https://discord.gg/3Fu6KHd).
 ## Requirements
 - [NodeJS and NPM](https://nodejs.org/en/)
 - [VLC](https://www.videolan.org/index.html)
-- [Discord desktop client](https://discordapp.com/)
+- [Discord desktop client](https://discord.com/)
 
 ## Start
  1. [Download the latest release for your platform](https://github.com/Pigpog/vlc-discord-rpc/releases)
  2. Unzip the file
- 3. Launch the start file.
- 4. Play media in the VLC window that opens
+ 3. Enable Game activity in Discord (Settings > Game Activity > "Display currently running game as status message" toggle)
+ 4. Launch the start file.
+ 5. Play media in the VLC window that opens
 
 If you installed VLC to a strange place, or you get the error "A problem occurred while launching vlc", you will need to edit the path of VLC in [config/config.js](./config/config.js).
 
@@ -36,5 +37,6 @@ To enable detached mode permanently, you can open config/config.js in a text edi
 Please see [CONFIGURATION.md](./CONFIGURATION.md) to learn more about manual configuration.
 
 ### Limitations
+ - Game Activity in Discord must be enabled (Settings > Game Activity > "Display currently running game as status message" toggle)
  - When running multiple concurrent instances, only the first-opened instance of VLC will have a rich presence
  - The rich presence cannot display album art
